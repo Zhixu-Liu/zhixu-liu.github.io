@@ -30,9 +30,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 &emsp;&emsp;Steps: Concept, Modeling, Texturing, Rendering<br>
             </p>
 
-    <iframe width="1000" height="562"  src="https://www.youtube.com/embed/KriHIG9a2sY?si=9NnYmcdJpgVkGKro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!--Youtube Embeded-->
+            <iframe width="1000" height="562"  src="https://www.youtube.com/embed/KriHIG9a2sY?si=9NnYmcdJpgVkGKro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
+            <br><br><br>
             <h3>Concept Design</h3>
             <p>
                 &emsp;&emsp;Because of my appreciation for stylized works, I integrated the cartoon-like style into this scene.<br>
@@ -60,6 +61,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 </div>
             </div>
             
+            <br><br>
             <h3>Modeling and UV Mapping</h3>
             <p>
                 &emsp;&emsp;I used Maya for modeling and UV mapping.<br>
@@ -76,12 +78,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 </div>
             </div>
 
+            <br><br><br>
             <h3>Textures and Materials</h3>
             <p>
-                &emsp;&emsp;I created the materials in Substance Designer. Using basic shapes and node functionalities, I produced various materials.<br>
-                &emsp;&emsp;When producing textures, my focus is on creating a watercolor brush texture. To achieve this, I primarily used the slope blur node.<br>
-                &emsp;&emsp;In Substance Painter, I adjusted some of the material's color channels by hand-painted to ensure stylistic and tonal consistency across 
-                different materials. Additionally, I modified some material seams to enhance the overall aesthetic level of the textures.<br>
+                &emsp;&emsp;I created the materials in Substance Designer. Using basic shapes and node functionalities, I produced various materials.
+                When producing textures, my focus is on creating a watercolor brush texture. To achieve this, I primarily used the slope blur node.<br>
+                
             </p>
 
             <div class="row">
@@ -94,6 +96,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
             </div>
 
             <div class="row">
+              <div class="column">
+                <img src="./Images/Proj04DsRender/proj4Ds001.png" alt="DS01" style="width:500px">
+              </div>
+              <div class="column">
+                <img src="./Images/Proj04DsRender/proj4Ds002.png" alt="DS02" style="width:500px">
+              </div>
+          </div>
+
+            <div class="row">
                 <div class="column">
                   <img src="./Images/Proj04DS/Proj04_DS03.png" alt="DS03" style="width:500px">
                 </div>
@@ -101,6 +112,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                   <img src="./Images/Proj04DS/Proj04_DS04.png" alt="DS04" style="width:500px">
                 </div>
             </div>
+
+            <div class="row">
+              <div class="column">
+                <img src="./Images/Proj04DsRender/proj4Ds003.png" alt="DS03" style="width:500px">
+              </div>
+              <div class="column">
+                <img src="./Images/Proj04DsRender/proj4Ds004.png" alt="DS04" style="width:500px">
+              </div>
+          </div>
 
             <div class="row">
                 <div class="column">
@@ -111,10 +131,39 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 </div>
             </div>
 
+            <div class="row">
+              <div class="column">
+                <img src="./Images/Proj04DsRender/proj4Ds005.png" alt="DS05" style="width:500px">
+              </div>
+              <div class="column">
+                <img src="./Images/Proj04DsRender/proj4Ds006.png" alt="DS06" style="width:500px">
+              </div>
+          </div>
+
+          <br>
+            <p>&emsp;&emsp;Substance Painter is a powerful 3D texture painting tool. It helped me to process and modify materials imported from Substance Designer in a 3D view. <br>
+               &emsp;&emsp;By rotating the model to different angles, I could better identify and fix UV mapping issues. I was also able to find UV shell seams and hand-paint the textures to remedy any defects. Additionally, I adjusted some of the material's color channels by hand-painting to ensure stylistic and tonal consistency across different materials.
+            </p>
+          
+            <img src="./Images/Proj04Sp/proj4Sp001.png" alt="RENDER03" class="center"> 
+            <br>
+            <img src="./Images/Proj04Sp/proj4Sp002.png" alt="RENDER03" class="center">
+            
+
+            <br><br><br>
             <h3>Rendering in Unreal Engine</h3>
             <p>
-                &emsp;&emsp;I utilized shaders and material applications within Unreal Engine. To make a nighttime ambiance, 
-                I used point lights as the primary light source, making the environment appear more like fields at night.<br>
+                &emsp;&emsp;In Unreal Engine, I experimented with using the opacity map to depict the diverse outlines of plant leaves. First, 
+                the shader's blend mode was set to Masked. Then, the opacity map of the material was linked to the Opacity Mask. This method allowed me 
+                to present the leaf outlines based on the existing opacity map of material. In this way, I significantly improved the efficiency of creating 
+                plant models and reduced the polygon count required for such models.
+            </p>
+
+            <img src="./Images/Proj04_Render/P1.png" alt="RENDER03" class="center">
+
+            <p>
+              &emsp;&emsp;I utilized shaders and material applications within Unreal Engine. To make a nighttime ambiance, 
+              I used point lights as the primary light source, making the environment appear more like fields at night.<br>
             </p>
 
             <div class="row">
